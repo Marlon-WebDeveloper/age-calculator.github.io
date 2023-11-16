@@ -46,8 +46,10 @@ alertAno.textContent = `Enter a valid year`
 }else if(year.value == ""){
     alertAno.classList.add("alert")
     alertAno.textContent = `Empty Field`
-    
-    
+}else if(isNaN(year.value)){
+    alertAno.classList.add("alert")
+    alertAno.textContent = `Enter a Number Please`
+
 }else {
     alertAno.classList.remove("alert")
     ano.innerHTML = fechaActual.getFullYear() - fecha.getFullYear();
@@ -60,8 +62,10 @@ if(month.value > 12){
 } else if(month.value == ""){
     alertMes.classList.add("alert");
     alertMes.textContent = `Empty Field`
+}else if(isNaN(month.value)){
 
-    
+alertMes.classList.add("alert");
+alertMes.textContent = `Enter a number please`    
     
 }else{
     alertMes.classList.remove("alert")
@@ -82,6 +86,10 @@ if(month.value > 12){
 if(day.value == ""){
     alertDia.classList.add("alert");
     alertDia.textContent = `Empty Field`
+}else if(isNaN(day.value)){
+alertDia.classList.add("alert")
+alertDia.textContent = `Enter a Number please`
+
 }else if(day.value > 31){
     alertDia.classList.add("alert");
     alertDia.textContent = `Empty Field`
