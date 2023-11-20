@@ -56,7 +56,7 @@ alertAno.textContent = `Enter a valid year`
 }
 
 
-if(month.value > 12){
+if(month.value > 12||month.value < 1){
     alertMes.classList.add("alert")
     alertMes.textContent =`Enter a valid month`
 } else if(month.value == ""){
@@ -90,7 +90,7 @@ if(day.value == ""){
 alertDia.classList.add("alert")
 alertDia.textContent = `Enter a Number please`
 
-}else if(day.value > 31){
+}else if(day.value > 31||day.value < 1){
     alertDia.classList.add("alert");
     alertDia.textContent = `Empty Field`
 
