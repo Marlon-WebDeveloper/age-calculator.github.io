@@ -39,7 +39,7 @@ const f = fechaActual.getTime() - fecha.getTime();
 
 
 
-if(year.value > fechaActual.getFullYear()){
+if(year.value > fechaActual.getFullYear()||year.value<1){
 alertAno.classList.add("alert");
 alertAno.textContent = `Enter a valid year`
 
